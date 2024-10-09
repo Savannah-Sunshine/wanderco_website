@@ -1,10 +1,10 @@
 
 .header {
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     padding: 1rem;
-    color: #fff;
+    color: var(--foreground);
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -55,7 +55,7 @@
         text-align: center; /* Ensures centered text inside columns */
     }
   
-    /* Todo: turn into a hamburger menu*/
+    /* Todo: turn into a hamburger*/
     .headerLinks {
       display: none;
     }

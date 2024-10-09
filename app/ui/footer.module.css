@@ -1,5 +1,5 @@
 .footer {
-    position: fixed;
+    position: fixed; /* Fixed position on the bottom of the screen, TODO: fix to be relative :( */
     bottom: 0;
     width: 100%;
     padding: 1rem;
