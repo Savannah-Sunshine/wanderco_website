@@ -10,7 +10,8 @@
 }
 
 .landingContent {
-    height: 606px;
+    height:fit-content;
+    padding-bottom: 10%;
 }
 
 @media (max-width: 768px) {
@@ -42,7 +43,8 @@
     transform-origin: top left;
     position: absolute;
     left: 0;
-    right: -1.5427%;
+    width: 100vw;
+    /* right: -1.5%; */
     top: 671.548px;
     height: 1500px;
     flex-direction: column;
@@ -54,23 +56,24 @@
 
 .background {
     z-index: -1;
+    width: 100vw;
 }
 
 .backgroundImage {
     transform-origin: top left;
     position: absolute;
-    /* left: -20px; */
+    left: -20px;
     top: -20px;
+    width: 100vw;
     height: 1000px;
-    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     overflow: hidden;
-    /* transform: matrix(1, 0, 0, 1, 0, 0); */
+    transform: matrix(1, 0, 0, 1, 0, 0);
     object-fit: cover;
-    filter:opacity(0.8);
+    filter: opacity(0.8);
 }
 
 .blur {
-    filter: blur(0px); /* Adjust the blur intensity */
+    filter: blur(10px); /* Adjust the blur intensity */
 }
