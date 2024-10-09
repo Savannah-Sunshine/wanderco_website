@@ -1,0 +1,59 @@
+.landingpage {
+    color: var(--background);
+
+    height: 100vh; /* Full screen height */
+}
+
+.landingcontent {
+    z-index: 1;
+    transform-origin: top left;
+    position: absolute;
+    left: 456px;
+    right: 50%;
+    top: calc(50% - 1070px);
+    height: 606px;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: matrix(1, 0, 0, 1, 0, 0) translateY(-50%);
+  }
+
+.slash {
+    transform-origin: top left;
+    position: absolute;
+    left: 0;
+    right: -1.5427%;
+    top: 671.548px;
+    height: 1500px;
+    flex-direction: column;
+    background-color: #fff;
+    overflow: hidden;
+    transform: matrix(0.9848, -0.1736, 0, 1, 0, 0);
+}
+
+.backgroundImage {
+    transform-origin: top left;
+    position: absolute;
+    left: -20px;
+    right: 20px;
+    top: -20px;
+    height: 1000px;
+    width: 105%;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    z-index: -1;
+    object-fit: cover;
+}
+
+.blur {
+    filter: blur(10px); /* Adjust the blur intensity */
+}
+
+.steveJohnsonEBV50vlTR_AUnsplas {
+    left: -265px;
+    top: -1108px;
+    width: 4096px;
+    height: 2556px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
