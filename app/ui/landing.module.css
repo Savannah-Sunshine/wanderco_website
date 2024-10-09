@@ -1,5 +1,7 @@
 .landingPage {
     background-color: var(--light);
+    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .heroSection{
@@ -43,20 +45,19 @@
     transform-origin: top left;
     position: absolute;
     left: 0;
-    width: 100vw;
     /* right: -1.5%; */
+    width: 100%;
     top: 671.548px;
     height: 1500px;
     flex-direction: column;
     background-color: #fff;
-    overflow: hidden;
     transform: matrix(0.9848, -0.1736, 0, 1.5, 0, 0);
     /* Change the 1.5 to the length of the screen */
 }
 
 .background {
     z-index: -1;
-    width: 100vw;
+    width: 100%;
 }
 
 .backgroundImage {
@@ -64,11 +65,9 @@
     position: absolute;
     left: -20px;
     top: -20px;
-    width: 100vw;
     height: 1000px;
     flex-direction: column;
     align-items: flex-start;
-    overflow: hidden;
     transform: matrix(1, 0, 0, 1, 0, 0);
     object-fit: cover;
     filter: opacity(0.8);

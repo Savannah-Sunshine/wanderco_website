@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 :root {
-  /* overflow: hidden; */
   width: 100vw;
   height: 100vh;
   align-items: flex-start;
@@ -11,6 +10,7 @@
   --light: #fff;
   --blue: #0458BF;
   --lightgray: #F2F4F7
+  overflow: hidden;
 }
 
 body {
