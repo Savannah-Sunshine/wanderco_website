@@ -48,6 +48,8 @@
         flex-direction: column;
         align-items: center;
         text-align: center; /* Centers content in mobile */
+
+        padding-bottom: 20px;
     }
   
     .headerColumn {

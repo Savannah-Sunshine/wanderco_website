@@ -1,17 +1,37 @@
 .landingPage {
-    z-index: 1;
-    color: var(--dark);
-    background: var(--light);
+    background-color: var(--light);
+}
+
+.heroSection{
+    color: black;
     flex-direction: column;
     padding: 10%;
+    position: relative;
 }
 
 .landingContent {
     height: 606px;
 }
 
+@media (max-width: 768px) {
+    .heroSection {
+        padding-top: 30px;
+        padding: 5%;
+        justify-content: center;
+    }
+}
+
+.signUpButton {
+    background-color: var(--blue);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 34px;
+    text-decoration: none;
+}
+
 .title {
     font-size: 73px;
+    font: Inter;
 }
 
 .description {
@@ -28,7 +48,8 @@
     flex-direction: column;
     background-color: #fff;
     overflow: hidden;
-    transform: matrix(0.9848, -0.1736, 0, 1, 0, 0);
+    transform: matrix(0.9848, -0.1736, 0, 1.5, 0, 0);
+    /* Change the 1.5 to the length of the screen */
 }
 
 .background {
@@ -38,18 +59,18 @@
 .backgroundImage {
     transform-origin: top left;
     position: absolute;
-    left: -20px;
-    right: 20px;
+    /* left: -20px; */
     top: -20px;
     height: 1000px;
-    width: 105%;
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     overflow: hidden;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+    /* transform: matrix(1, 0, 0, 1, 0, 0); */
     object-fit: cover;
+    filter:opacity(0.8);
 }
 
 .blur {
-    filter: blur(10px); /* Adjust the blur intensity */
+    filter: blur(0px); /* Adjust the blur intensity */
 }
