@@ -1,0 +1,27 @@
+.header {
+    border-bottom: var(--dark);
+    background-color: var(--lightgray);
+    display: flex;
+    align-items: center;
+    height: 50px;
+    color: var(--dark);
+    padding: 10px;
+}
+
+.headerLeft {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    border-radius: 4px;
+}

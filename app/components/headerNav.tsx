@@ -6,19 +6,21 @@ export default function HeaderNav() {
         <header className={styles.header}>
             <div className={styles.headerColumn}>
                 <div className={styles.wanderco}>
-                    wanderco
+                    <a href="/">wanderco</a>
                 </div>
             </div>
             <div className={styles.headerColumn}>
                 <div className={styles.headerLinks}>
                     <a href="/examples" className="headerLink">
-                        See examples
+                        Examples
                     </a>
                     <a href="/login" className="headerLink">
                         Log in
                     </a>
-                    <div> 
-                        <SVG_Button className={styles.icon2} />
+                    <div>
+                        <a href="/login">
+                            <SVG_Button className={styles.icon2} />
+                        </a>
                     </div>
                 </div>
             </div>
