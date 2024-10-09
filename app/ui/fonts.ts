@@ -3,7 +3,6 @@
 // This means when a user visits your application, 
 // there are no additional network requests for fonts which would impact performance.
 import { Sen } from 'next/font/google'
-
 export const sen = Sen({ subsets: ['latin'] })
 
 

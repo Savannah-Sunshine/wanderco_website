@@ -3,17 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  width: 100vw;
+  height: 100vh;
+  align-items: flex-start;
+  --background: #444;
+  --foreground: #fff;
+  --blue: #0458BF;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   color: var(--foreground);
   background: var(--background);

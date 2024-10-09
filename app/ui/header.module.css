@@ -1,0 +1,67 @@
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    /* left: 50%; Center the header */
+    flex-wrap: nowrap; /* Prevents unnecessary wrapping on larger screens */
+    padding-top: 58px;
+    padding-bottom: 132px;
+
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  
+  .headerColumn {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .headerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .wanderco {
+    font-size: 24px;
+    line-height: 19.5px;
+    font-weight: bold;
+    font-family: Sen, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+  
+    white-space: nowrap;
+    flex-direction: column;
+    align-items: center;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+  
+  /* Mobile view adjustments */
+  @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Centers content in mobile */
+    }
+  
+    .headerColumn {
+        margin-bottom: 20px;
+        text-align: center; /* Ensures centered text inside columns */
+    }
+  
+    /* Todo: turn into a hamburger menu*/
+    .headerLinks {
+      display: none;
+    }
+  }
+  
+  .icon2 {
+    width: 100%;
+    height: 100%;
+  }

@@ -1,0 +1,56 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: #F2F4F7;
+    color: #444;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligns the columns vertically */
+    flex-wrap: nowrap; /* Prevents unnecessary wrapping on larger screens */
+    text-align: left; /* Aligns text to the left for better column layout */
+    padding: 30px;
+}
+
+.footerColumn {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    text-align: center; /* Ensures centered content in mobile view */
+}
+
+.footerButton {
+    background-color: var(--blue);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 34px;
+    text-decoration: none;
+}
+
+.wanderco {
+    font-size: 24px;
+    line-height: 19.5px;
+    font-weight: bold;
+    font-family: Sen, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+
+    white-space: nowrap;
+    flex-direction: column;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    margin: 10px;
+  }
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Centers content in mobile */
+    }
+
+    .footerColumn {
+        margin-bottom: 20px;
+        text-align: center; /* Ensures centered text inside columns */
+    }
+}
