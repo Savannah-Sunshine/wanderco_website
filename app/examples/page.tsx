@@ -63,8 +63,8 @@ const columns = [
 ]
 
 export default function Page() {
-    const [data, _setData] = React.useState(() => [...defaultData])
-    const rerender = React.useReducer(() => ({}), {})[1]
+    const [data] = React.useState(() => [...defaultData])
+    // const rerender = React.useReducer(() => ({}), {})[1]
 
     const table = useReactTable({
         data,
