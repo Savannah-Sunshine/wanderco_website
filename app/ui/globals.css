@@ -7,15 +7,16 @@
   height: 100vh;
   align-items: flex-start;
   --dark: #444;
+  --lessdark: #797878;
   --light: #fff;
   --blue: #0458BF;
-  --lightgray: #F2F4F7
+  --softgray: #F2F4F7
   overflow: hidden;
 }
 
 body {
   color: var(--light);
-  background: var(--lightgray);
+  background: var(--softgray);
   font-family: Arial, Helvetica, sans-serif;
 }
 

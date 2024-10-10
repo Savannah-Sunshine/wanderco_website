@@ -18,7 +18,7 @@ export default function HeaderNav() {
                         Log in
                     </a>
                     <div>
-                        <a href="/login">
+                        <a href="/pricing">
                             <SVG_Button className={styles.icon2} />
                         </a>
                     </div>

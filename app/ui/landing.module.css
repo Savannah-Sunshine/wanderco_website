@@ -1,7 +1,6 @@
 .landingPage {
     background-color: var(--light);
     overflow: hidden;
-    overflow-x: hidden;
 }
 
 .heroSection{

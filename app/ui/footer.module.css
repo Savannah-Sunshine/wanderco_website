@@ -3,7 +3,7 @@
     bottom: 0;
     width: 100%;
     padding: 1rem;
-    background-color: var(--lightgray);
+    background-color: var(--softgray);
     color: var(--dark);
     font-size: 0.8rem;
     display: flex;

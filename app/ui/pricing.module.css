@@ -1,0 +1,121 @@
+.pricingPage {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--light);
+    color: var(--dark);
+    flex-direction: column;
+    background: url("/../steve-johnson.jpg") no-repeat center center fixed; 
+    background-size: 100vw 100vh;
+    overflow: hidden;
+}
+
+.pricing {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.pricingHeader {
+    align-items: center;
+    justify-content: center;
+}
+
+.pricingHeader h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+.pricingHeader p {
+    font-size: 24px;
+}
+
+.pricingChart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.pricingPlan {
+    padding: 40px;
+    background-color: var(--light);
+    color: var(--dark);
+    border-color: #E7EBFF;
+    border-width: 1px;
+    border-radius: 26px;
+    box-shadow: 0px 0px 20px 0px #BCCAFF;
+}
+
+.pricingPlan h2 {
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.pricingPlan p {
+    font-size: 24px;
+    color: var(--lessdark);
+}
+
+.pricingPlan hr {
+    height: 0;
+    color: var(--dark);
+    border-top-width: 1px;
+}
+
+.pricingPlan ul {
+    list-style-type: circle;
+    padding: 20px;
+}
+
+.pricingPlan li {
+    color: var(--dark);
+    font-size: 24px;
+    padding: 0;
+}
+
+.pricingPlan .button {
+    background-color: var(--blue);
+    color: var(--light);
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.background {
+    max-width: 100%;
+    max-height: 100%
+}
+
+.slash {
+    /* background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    transform: matrix(1, -0.176327, 0, 1, 0, 0);
+    display: block;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 1500px;
+    left: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 440px;
+    width: 1366px;
+    -webkit-font-smoothing: antialiased; */
+    width: 100%;
+    height: 1500px;
+    background-color: var(--light);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-height: 150vh;
+    transform: translate(-50%, -50%) rotate(-10deg); /* Translate centers the square, rotate tilts it */
+  }

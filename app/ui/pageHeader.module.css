@@ -1,6 +1,6 @@
 .header {
     border-bottom: var(--dark);
-    background-color: var(--lightgray);
+    background-color: var(--softgray);
     display: flex;
     align-items: center;
     height: 50px;
