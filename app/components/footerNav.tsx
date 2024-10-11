@@ -4,7 +4,6 @@ export default function FooterNav() {
     return (
         <footer className={styles.footer}>
             <div className={styles.footerColumn}>
-                {/* Todo */}
                 <div className={styles.wanderco}>
                     wanderco
                 </div>
@@ -17,9 +16,16 @@ export default function FooterNav() {
                 </div>
             </div>
             <div className={styles.footerColumn}>
-                <a href="/signup" className={styles.footerButton}>
-                    Start my 30-day free trial now
-                </a>
+                <div className={styles.spacing}>
+                    <a href="/signup" className={styles.footerButton}>
+                        Start my 30-day free trial now
+                    </a>
+                </div>
+                <div>
+                    <a href="/privacy" className={styles.footerLink}>
+                        Privacy Policy
+                    </a>
+                </div>
             </div>
         </footer>
     )

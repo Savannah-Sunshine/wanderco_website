@@ -1,18 +1,32 @@
 .landingPage {
     background-color: var(--light);
     overflow: hidden;
+    padding: 80px;
+    padding-top: 58px;
+    background: url("/../steve-johnson.jpg") no-repeat center center fixed; 
+    background-size: 100vw 100vh;
+    overflow: hidden;
 }
 
 .heroSection{
     color: black;
+    display: flex;
+    /* flex-direction: row; a la zaymo setup*/
     flex-direction: column;
-    padding: 10%;
+    width: 100%;
     position: relative;
+    margin-bottom: 58px;
 }
 
 .landingContent {
     height:fit-content;
-    padding-bottom: 10%;
+    flex-direction: row;
+    margin-bottom: 58px;
+}
+
+.heroImage {
+    width: fit-content;
+    border-radius: 34px;
 }
 
 @media (max-width: 768px) {
@@ -29,15 +43,19 @@
     padding: 10px 20px;
     border-radius: 34px;
     text-decoration: none;
+    margin-top: 20px;
 }
 
 .title {
-    font-size: 73px;
+    font-size: 64px;
     font: Inter;
+    line-height: 1.1;
 }
 
 .description {
-    font-size: 70px;
+    font-size: 30px;
+    line-height: 1.1;
+    margin-bottom: 20px;
 }
 
 .slash {
@@ -59,19 +77,13 @@
     width: 100%;
 }
 
-.backgroundImage {
-    transform-origin: top left;
-    position: absolute;
-    left: -20px;
-    top: -20px;
-    height: 1000px;
-    flex-direction: column;
-    align-items: flex-start;
-    transform: matrix(1, 0, 0, 1, 0, 0);
-    object-fit: cover;
-    filter: opacity(0.8);
-}
-
 .blur {
     filter: blur(10px); /* Adjust the blur intensity */
 }
+
+@media (prefers-color-scheme: dark) {
+    .slash {
+        color: var(--light);
+        background-color: var(--dark);
+    }
+  }

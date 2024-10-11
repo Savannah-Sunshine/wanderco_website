@@ -3,15 +3,13 @@
     align-items: left;
     justify-content: center;
     padding: 80px;
-    margin: 10px;
+    padding-top: 58px;
     height: 100vh;
-    color: var(--dark)
 }
 
 .privacy h1 {
     font-size: 36px;
     font-weight: 600;
-    align-self: center;
 }
 
 .privacy h2 {

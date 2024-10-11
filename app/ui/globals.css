@@ -16,12 +16,19 @@
 
 body {
   color: var(--light);
-  background: var(--softgray);
+  background: var(--dark);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .privacy {
+      color: var(--light);
+      background-color: var(--dark);
   }
 }

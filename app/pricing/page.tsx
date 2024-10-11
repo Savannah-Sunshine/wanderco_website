@@ -1,3 +1,4 @@
+import FooterNav from "../components/footerNav";
 import HeaderNav from "../components/headerNav";
 import classes from "../ui/pricing.module.css";
 
@@ -8,7 +9,7 @@ export default function Page() {
                 {/* <div className={classes.blur}>
                     <img className={classes.backgroundImage} alt="background img" loading="eager" src="steve-johnson.jpg" />
                 </div> */}
-                <div className={classes.slash}></div>
+                {/* <div className={classes.slash}></div> */}
             </div>
             <HeaderNav />
             <div className={classes.pricing}>
@@ -41,6 +42,7 @@ export default function Page() {
                     </div>
                 </div>
             </div>
+            <FooterNav />
         </div>
     )
 }

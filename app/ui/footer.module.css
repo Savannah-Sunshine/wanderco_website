@@ -1,10 +1,10 @@
 .footer {
-    position: fixed; /* Fixed position on the bottom of the screen, TODO: fix to be relative :( */
+    position: relative; /* Fixed position on the bottom of the screen, TODO: fix to be relative :( */
     bottom: 0;
     width: 100%;
     padding: 1rem;
-    background-color: var(--softgray);
-    color: var(--dark);
+    /* background-color: var(--softgray);
+    color: var(--dark); */
     font-size: 0.8rem;
     display: flex;
     justify-content: space-between;
@@ -14,11 +14,20 @@
     padding: 30px;
 }
 
+.spacing {
+    height: fit-content;
+    margin-bottom: 10px;
+}
+
 .footerColumn {
     flex: 1;
     min-width: 200px;
     margin: 10px;
     text-align: center; /* Ensures centered content in mobile view */
+    flex-direction: row;
+    align-items: center;
+    column-gap: 50px;
+    justify-content: flex-end;
 }
 
 .footerButton {
@@ -26,6 +35,14 @@
     color: #fff;
     padding: 10px 20px;
     border-radius: 34px;
+    text-decoration: none;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     text-decoration: none;
 }
 

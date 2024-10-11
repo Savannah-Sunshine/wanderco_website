@@ -5,10 +5,10 @@ import styles from "../ui/privacy.module.css";
 export default function Page() {
     return (
         <div>
-            <HeaderNav/>
             <div className={styles.privacy}>
+                <HeaderNav />
                 <h1>Privacy Policy</h1>
-                <p>Last updated: June 15, 2021</p>
+                <p>Last updated: Oct 9, 2024</p>
                 <p>Wanderco ("us", "we", or "our") operates the Wanderco website (the "Service").</p>
                 <p>This page informs you of our policies regarding the collection, use and disclosure of Personal Information when you use our Service.</p>
                 <p>We will not use or share your information with anyone except as described in this Privacy Policy.</p>
@@ -38,16 +38,17 @@ export default function Page() {
                 <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
                 <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
                 <h2>Contact Us</h2>
-                <p>If you have any questions about this Privacy Policy, please contact us:</p>
-                <ul>
-                    <li>By email:
-                        <ul>
-                            <li>
-                                <a href="mailto:contact@wanderco.org">contact@wanderco.org</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+                <p>WanderCo 551 N 200 E Apt 307 Provo, Utah 84606
+                    <br></br>
+                    Email address: <a href="mailto:Contact@wanderco.org">contact@wanderco.org</a>
+                    <br></br>
+                    Effective date: Oct 9, 2024
+                </p>
+                <br></br>
+                <br></br>
+                <br></br>
+                <hr></hr>
                 <FooterNav />
             </div>
         </div>

@@ -3,23 +3,16 @@
     position: relative;
     top: 0;
     width: 100%;
-    padding: 1rem;
+    margin-bottom: 58px;
     color: var(--light);
     align-items: center;
     display: flex;
     justify-content: space-between;
-    /* left: 50%; Center the header */
     flex-wrap: nowrap; /* Prevents unnecessary wrapping on larger screens */
-    padding-top: 58px;
-    padding-bottom: 132px;
-
-    padding-left: 60px;
-    padding-right: 60px;
   }
   
   .headerColumn {
     flex: 1;
-    min-width: 200px;
     margin: 10px;
   }
   
@@ -28,6 +21,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    min-width: 450px;
   }
   
   .wanderco {
@@ -41,25 +35,48 @@
     align-items: center;
     transform: matrix(1, 0, 0, 1, 0, 0);
   }
+
+  .mobileMenu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: none;
+  }
   
   /* Mobile view adjustments */
   @media (max-width: 768px) {
     .header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        text-align: center; /* Centers content in mobile */
-
-        padding-bottom: 20px;
-    }
-  
-    .headerColumn {
         margin-bottom: 20px;
-        text-align: center; /* Ensures centered text inside columns */
     }
   
-    /* Todo: turn into a hamburger*/
     .headerLinks {
       display: none;
+    }
+
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  
+    .mobileMenu {
+      display: flex;
+      flex-direction: column;
+    }
+    .menu {
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    .header {
+      color: var(--dark);
     }
   }
   

@@ -8,10 +8,9 @@ export default function Home() {
     <div className="root">
       <div className={classes.landingPage}>
         <div className={classes.background}>
-          <div className={classes.blur}>
-            <img className={classes.backgroundImage} alt="background img" loading="eager" src="steve-johnson.jpg" />
-          </div>
-          <div className={classes.slash}></div>
+          {/* <div className={classes.blur}>
+          </div> */}
+          {/* <div className={classes.slash}></div> */}
         </div>
         <HeaderNav />
         <div className={classes.heroSection}>
