@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import FooterNav from "../components/footerNav";
 import HeaderNav from "../components/headerNav";
 import styles from "../ui/privacy.module.css";
