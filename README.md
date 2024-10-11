@@ -15,6 +15,8 @@ pnpm dev
 bun dev
 ```
 
+Before merging to main run "npm run lint" and fix errors
+
 App must be run on Node version 18.17.0: nvm use 18.17.0
 
 

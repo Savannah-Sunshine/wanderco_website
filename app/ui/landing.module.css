@@ -158,8 +158,8 @@
 
 @media (prefers-color-scheme: dark) {
     .slash {
-        color: var(--light);
-        background-color: var(--dark);
+        /* color: var(--dark); */
+        background-color: #474747;;
         /* background-color: #1c1c1c; */
     }
 
