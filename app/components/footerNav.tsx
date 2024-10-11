@@ -4,6 +4,21 @@ export default function FooterNav() {
     return (
         <footer className={styles.footer}>
             <div className={styles.footerColumn}>
+                <div className={styles.spacing}>
+                    <a href="/pricing" className={styles.footerButton}>
+                        Start my 30-day free trial now
+                    </a>
+                    <a href="/pricing" className={styles.miniFooterButton}>
+                        Start now
+                    </a>
+                </div>
+                <div>
+                    <a href="/privacy" className={styles.footerLink}>
+                        Privacy Policy
+                    </a>
+                </div>
+            </div>
+            <div className={styles.footerColumn}>
                 <div className={styles.wanderco}>
                     wanderco
                 </div>
@@ -15,18 +30,7 @@ export default function FooterNav() {
                     © 2024 WanderCo. All rights reserved
                 </div>
             </div>
-            <div className={styles.footerColumn}>
-                <div className={styles.spacing}>
-                    <a href="/signup" className={styles.footerButton}>
-                        Start my 30-day free trial now
-                    </a>
-                </div>
-                <div>
-                    <a href="/privacy" className={styles.footerLink}>
-                        Privacy Policy
-                    </a>
-                </div>
-            </div>
+            
         </footer>
     )
 }

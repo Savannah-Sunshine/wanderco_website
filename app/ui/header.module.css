@@ -76,7 +76,7 @@
 
   @media (prefers-color-scheme: light) {
     .header {
-      color: var(--dark);
+      color: var(--light);
     }
   }
   
