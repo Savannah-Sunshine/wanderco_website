@@ -10,6 +10,7 @@
     justify-content: space-between;
     align-items: center; /* Aligns the columns vertically */
     flex-wrap: nowrap; /* Prevents unnecessary wrapping on larger screens */
+    flex-direction: row-reverse;
     text-align: left; /* Aligns text to the left for better column layout */
     padding: 30px;
 }
@@ -28,6 +29,7 @@
     align-items: center;
     column-gap: 50px;
     justify-content: flex-end;
+    color: var(--dark);
 }
 
 .footerButton {
@@ -36,6 +38,15 @@
     padding: 10px 20px;
     border-radius: 34px;
     text-decoration: none;
+}
+
+.miniFooterButton {
+    background-color: var(--blue);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 34px;
+    text-decoration: none;
+    display: none;
 }
 
 .footerLinks {
@@ -59,7 +70,7 @@
   }
 
 /* Mobile view adjustments */
-@media (max-width: 768px) {
+@media (max-width: 750px) {
     .footer {
         flex-direction: column;
         align-items: center;
@@ -69,5 +80,22 @@
     .footerColumn {
         margin-bottom: 20px;
         text-align: center; /* Ensures centered text inside columns */
+    }
+
+    .miniFooterButton {
+        display: unset;
+    }
+
+    .footerButton {
+        display: none;
+        
+    }
+
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .footerColumn {
+        color: var(--light);
     }
 }

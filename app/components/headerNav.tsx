@@ -20,12 +20,19 @@ export default function HeaderNav() {
             </div>
             <div className={styles.headerColumn}>
                 <div className={styles.headerLinks}>
-                    <a href="/examples" className="headerLink">
+                    {/* <a href="/examples" className="headerLink">
+                        Examples
+                    </a> */}
+                     <a href="/" className="headerLink">
                         Examples
                     </a>
-                    <a href="/login" className="headerLink">
+                    {/* <a href="/login" className="headerLink">
+                        Log in
+                    </a> */}
+                    <a href="/" className="headerLink">
                         Log in
                     </a>
+                    
                     <div>
                         <a href="/pricing">
                             <SVG_Button className={styles.icon2} />
@@ -57,11 +64,17 @@ export default function HeaderNav() {
                 {/* Mobile Menu */}
                 {isOpen && (
                     <div className={styles.mobileMenu}>
-                        <a href="/examples" className="headerLink">
+                        {/* <a href="/examples" className="headerLink">
+                            Examples
+                        </a> */}
+                        <a href="/" className="headerLink">
                             Examples
                         </a>
                         <hr />
-                        <a href="/login" className="headerLink">
+                        {/* <a href="/login" className="headerLink">
+                            Log in
+                        </a> */}
+                        <a href="/" className="headerLink">
                             Log in
                         </a>
                         <hr />

@@ -2,20 +2,14 @@
     display: flex;
     justify-content:flex-start;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
-    padding: 80px;
-    padding-top: 58px;
+    /* height: 100vh;
+    width: 100vw; */
+    /* padding: 80px;
+    padding-top: 58px; */
     flex-direction: column;
-    background: url("/../steve-johnson.jpg") no-repeat center center fixed; 
-    background-size: 100vw 100vh;
-}
-
-@media (max-width: 768px) {
-    .pricingPage {
-        padding: 5px;
-    }
-    
+    /* background: url("/../steve-johnson.jpg") no-repeat center center fixed;  */
+    /* background-size: 100vw 100vh; */
+    background-size: cover;
 }
 
 .pricing {
@@ -26,6 +20,7 @@
     gap: 20px;
     flex-direction: column;
     padding: 10px;
+    color: black;
 }
 
 .pricingHeader {
@@ -45,6 +40,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 40px;
     flex-direction: row;
     padding: 10px;
@@ -58,6 +54,9 @@
     border-width: 1px;
     border-radius: 26px;
     box-shadow: 0px 0px 20px 0px var(--dark);
+    height: 100%;
+    max-height: 350px;
+    width: 340px;
 }
 
 .pricingPlan h2 {
@@ -124,4 +123,40 @@
     left: 50%;
     max-height: 150vh;
     transform: translate(-50%, -50%) rotate(-10deg); /* Translate centers the square, rotate tilts it */
-  }
+}
+
+@media (prefers-color-scheme: dark) {
+    .pricing {
+        color: var(--light);
+    }
+}
+
+@media (max-width: 750px) {
+    .pricingPage {
+        padding: 5px;
+    }
+
+    .pricingPlan {
+        width: 280px;
+        padding: 20px;
+    }
+
+    .pricingPlan h2 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    
+    .pricingPlan p {
+        font-size: 18px;
+    }
+    
+    
+    .pricingPlan ul {
+        padding: 15px;
+    }
+    
+    .pricingPlan li {
+        font-size: 15px;
+    }
+    
+}

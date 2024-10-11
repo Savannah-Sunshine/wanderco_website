@@ -4,8 +4,21 @@
     padding: 80px;
     padding-top: 58px;
     background: url("/../steve-johnson.jpg") no-repeat center center fixed; 
-    background-size: 100vw 100vh;
+    /* background-size: 100vw 100vh; */
+    background-size: cover;
     overflow: hidden;
+}
+
+.landingPage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit; /* Inherit the background image */
+    filter: blur(10px); /* Apply blur effect */
+    pointer-events: none; /* Allow clicks to pass through to elements underneath */
 }
 
 .heroSection{
@@ -16,6 +29,7 @@
     width: 100%;
     position: relative;
     margin-bottom: 58px;
+    align-items: center;
 }
 
 .landingContent {
@@ -25,19 +39,15 @@
 }
 
 .heroImage {
-    width: fit-content;
+    width: 90%;
+    max-width: 1200px;
     border-radius: 34px;
 }
 
-@media (max-width: 768px) {
-    .heroSection {
-        padding-top: 30px;
-        padding: 5%;
-        justify-content: center;
-    }
-    .title {
-        font-size: 20px;
-    }
+.title {
+    font-size: 64px;
+    font: Inter;
+    line-height: 1.1;
 }
 
 .signUpButton {
@@ -49,31 +59,49 @@
     margin-top: 20px;
 }
 
-.title {
-    font-size: 64px;
-    font: Inter;
-    line-height: 1.1;
+.miniSignUpButton {
+    background-color: var(--blue);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 34px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: none;
+}
+
+.titleViewer {
+    color: white;
+    text-shadow: -1px -1px 10px #00000025, 1px -1px 10px #00000025, -1px 1px 10px #00000025, 1px 1px 10px #00000025;
 }
 
 .description {
     font-size: 30px;
     line-height: 1.1;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
+
 .slash {
-    transform-origin: top left;
+    position: absolute; /* Relative positioning to control pseudo-element */
+    top: 25rem;
+    right: 0;
+    width: 100%;
+    height: 1500px;
+    background-color: #fff;
+}
+
+.slash::before {
+    content: '';
     position: absolute;
     left: 0;
-    /* right: -1.5%; */
     width: 100%;
-    top: 671.548px;
-    height: 1500px;
-    flex-direction: column;
+    height: 100ch; /* Adjust to control the size of the diagonal section */
     background-color: #fff;
-    transform: matrix(0.9848, -0.1736, 0, 1.5, 0, 0);
-    /* Change the 1.5 to the length of the screen */
+    transform: skewY(-7deg);
+    transform-origin: top left;
 }
+
 
 .background {
     z-index: -1;
@@ -81,12 +109,65 @@
 }
 
 .blur {
-    filter: blur(10px); /* Adjust the blur intensity */
+    filter: blur(90px); /* Adjust the blur intensity */
+}
+
+
+@media (max-width: 1100px) {
+    .landingPage {
+        padding: 40px
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .landingPage {
+        padding: 15px
+    }
+
+    .heroSection {
+        padding-top: 30px;
+        padding: 5%;
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .signUpButton {
+        display: none;
+    }
+
+    .miniSignUpButton {
+        display: unset;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
     .slash {
         color: var(--light);
         background-color: var(--dark);
+        /* background-color: #1c1c1c; */
     }
-  }
+
+    .title {
+        color: var(--light);
+    }
+
+    .heroSection {
+        color: var(--light);
+    }
+}
