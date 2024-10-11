@@ -6,6 +6,12 @@
     padding-top: 58px;
     height: 100vh;
 }
+@media (max-width: 768px) {
+    .privacy {
+        padding: 5%;
+    }
+}
+
 
 .privacy h1 {
     font-size: 36px;

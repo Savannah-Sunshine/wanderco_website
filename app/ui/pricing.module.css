@@ -11,6 +11,13 @@
     background-size: 100vw 100vh;
 }
 
+@media (max-width: 768px) {
+    .pricingPage {
+        padding: 5px;
+    }
+    
+}
+
 .pricing {
     z-index: 1;
     display: flex;
