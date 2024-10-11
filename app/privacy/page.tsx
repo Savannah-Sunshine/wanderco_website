@@ -1,7 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import classes from "../ui/privacy.module.css";
-import { inter } from "../ui/fonts";
-import pricingClasses from "../ui/pricing.module.css";
 
 export default function Page() {
     return (

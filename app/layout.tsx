@@ -4,7 +4,6 @@ import { sen } from "./ui/fonts";
 import FooterNav from "./components/footerNav";
 import HeaderNav from "./components/headerNav";
 import classes from "./ui/landing.module.css";
-import { inter } from "./ui/fonts";
 
 // For search engines (SEO) and social media platforms
 export const metadata: Metadata = {

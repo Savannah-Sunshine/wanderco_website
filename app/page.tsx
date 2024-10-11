@@ -1,5 +1,3 @@
-import FooterNav from "./components/footerNav";
-import HeaderNav from "./components/headerNav";
 import classes from "./ui/landing.module.css";
 import { inter } from "./ui/fonts";
 
